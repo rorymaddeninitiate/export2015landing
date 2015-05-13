@@ -11,18 +11,23 @@
 <body>
 
 <style>
+
 .bgcontainer {
-    background: url('./Back3.jpg') no-repeat center center fixed;
+    background: url('./Back2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     min-height: 100%;
+    background-attachment: fixed;
+    position: absolute;
     /*padding-bottom:100px;*/
 }
 .container {
   padding-top: 20px;
+  height: 100%;
 }
+
 .infoBlock {
   background: rgba(51, 51, 51, 0.8);
   color: #fff;
@@ -46,7 +51,24 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
-
+.lead {
+  color: #02d0ac;
+  font-size: 30px;
+}
+.avatar {
+  color: #02d0ac;
+  
+}
+@media (min-width: 600px) {
+  .bgcontainer {
+    position: relative;
+  }
+  .row {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 </style>
 
 <div class="bgcontainer">
@@ -63,7 +85,10 @@ body {
               <br>
               <p>The conference's themes are designed to encourage cross pollination of ideas across industries as well as provide sufficient focus to delve into the challenges each industry faces. </p>
               <br>
+              <h1 class="lead">COMING SOON ... </h1>
           </div>
+
+
           <!-- <div class="row"> -->
               <!-- <div class="col-md-12 col-sm-12 col-xs-12 text-center text-center v-center"> -->
                   <h2>Sign Up for more information</h2>
